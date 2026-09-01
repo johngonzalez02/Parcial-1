@@ -1,0 +1,248 @@
+:root {
+  --bg: #0b1424;
+  --panel: #121e33;
+  --panel-border: #223354;
+  --accent: #4c8dff;
+  --accent-soft: #1c3a66;
+  --text: #e7edf7;
+  --text-muted: #93a4c3;
+ 
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+ 
+  --pico-font-family: var(--font-body);
+  --pico-background-color: var(--bg);
+  --pico-color: var(--text);
+  --pico-primary: var(--accent);
+  --pico-primary-hover: #6ea3ff;
+  --pico-h1-color: var(--text);
+  --pico-h2-color: var(--text);
+  --pico-muted-color: var(--text-muted);
+}
+ 
+body {
+  background: var(--bg);
+}
+ 
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+ 
+.hero {
+  border-bottom: 1px solid var(--panel-border);
+  padding-block: 3rem 2rem;
+  margin-bottom: 3rem;
+  background:
+    radial-gradient(60% 100% at 15% 0%, var(--accent-soft) 0%, transparent 60%),
+    var(--bg);
+}
+ 
+.hero .eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+ 
+.hero h1 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  margin-bottom: 0.25rem;
+}
+ 
+.hero .role {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+ 
+.hero-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+.hero-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+ 
+.hero-nav a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+ 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+ 
+.card {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-bottom: 0;
+}
+ 
+.card--wide {
+  margin-bottom: 1.5rem;
+}
+ 
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+ 
+.card h3 {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+ 
+.card p {
+  color: var(--text);
+  line-height: 1.6;
+}
+ 
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  margin: 0;
+}
+ 
+.info-grid dt {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+}
+ 
+.info-grid dd {
+  margin: 0;
+  font-weight: 500;
+}
+ 
+.timeline-item {
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+ 
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+ 
+.timeline-item header {
+  padding: 0;
+  margin-bottom: 0.35rem;
+  background: none;
+  border: none;
+}
+ 
+.timeline-item strong {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+}
+ 
+.timeline-item .meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0.4rem;
+}
+ 
+.timeline-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+ 
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+.skill-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--panel-border);
+  font-size: 0.95rem;
+}
+ 
+.skill-list li:last-child {
+  border-bottom: none;
+}
+ 
+.skill-name {
+  color: var(--text);
+}
+ 
+.skill-level {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+ 
+.card ul:not(.skill-list):not(.contact-list) {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+ 
+.card ul:not(.skill-list):not(.contact-list) li {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+ 
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+.contact-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--panel-border);
+  font-size: 0.95rem;
+}
+ 
+.contact-list li:last-child {
+  border-bottom: none;
+}
+ 
+.contact-label {
+  display: inline-block;
+  min-width: 90px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+ 
+.contact-list a {
+  color: var(--accent);
+}
+ 
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding-block: 2rem 3rem;
+}
+ 
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+ 
