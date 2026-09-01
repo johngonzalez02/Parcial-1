@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="UTF 8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Stiven Gonzalez Rivera</title>
-     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Stiven Gonzalez Rivera — CV</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-     <header class="hero">
+ 
+  <header class="hero">
     <div class="container">
-      <p class="eyebrow">Programacion en Ambiente Web I</p>
+      <p class="eyebrow">Programación en Ambiente Web I</p>
       <h1>John Stiven Gonzalez Rivera</h1>
-      <p class="role">Estudiante de Ingenieria de Sistemas</p>
-      <nav>
+      <p class="role">Estudiante de Ingeniería de Sistemas</p>
+ 
+      <nav class="hero-nav">
         <ul>
           <li><a href="#perfil">Perfil</a></li>
-          <li><a href="#formacion">Formacion</a></li>
+          <li><a href="#formacion">Formación</a></li>
           <li><a href="#experiencia">Experiencia</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
@@ -27,44 +32,74 @@
         </ul>
       </nav>
     </div>
-    </header>
-
-    <main class="container">
-
-    <section id="perfil">
-    <h2>Perfil profesional</h2>
-    <p>
-        Estudiante de Ingeniería en Sistemas, apasionado por el desarrollo web porque me permite combinar lógica y creatividad
-        para resolver problemas reales y ver el resultado cobrar vida al instante. Me diferencia mi curiosidad constante
-        por aprender nuevas tecnologías y mi atención al detalle, tanto en el código como en la experiencia del usuario final.
+  </header>
+ 
+  <main class="container">
+ 
+    <section id="info-personal" class="card card--wide">
+      <h2>Información personal</h2>
+      <dl class="info-grid">
+        <div>
+          <dt>Nombre completo</dt>
+          <dd>John Stiven Gonzalez Rivera</dd>
+        </div>
+        <div>
+          <dt>Ciudad</dt>
+          <dd>Tuluá, Valle del Cauca, Colombia</dd>
+        </div>
+        <div>
+          <dt>Programa</dt>
+          <dd>Ingeniería de Sistemas — 7.º semestre</dd>
+        </div>
+        <div>
+          <dt>Institución</dt>
+          <dd>Unidad Central del Valle del Cauca</dd>
+        </div>
+      </dl>
+    </section>
+ 
+    <section id="perfil" class="card card--wide">
+      <h2>Perfil profesional</h2>
+      <p>
+        Estudiante de Ingeniería en Sistemas, apasionado por el desarrollo web porque me permite
+        combinar lógica y creatividad para resolver problemas reales y ver el resultado cobrar vida
+        al instante. Me diferencia mi curiosidad constante por aprender nuevas tecnologías y mi
+        atención al detalle, tanto en el código como en la experiencia del usuario final.
       </p>
     </section>
-
-    <section id="formacion">
-      <h2>Formación académica</h2>
-      <article>
-        <header>
-          <strong>Ingenieria en Sistemas</strong>
-          <p><em>Unidad Central del Valle — 7mo Semestre/2026</em></p>
-        </header>
-        <p>La Ingeniería en Sistemas es una carrera enfocada en el diseño, desarrollo e implementación de soluciones tecnológicas
-        para resolver problemas del mundo real. Combina fundamentos de programación, bases de datos, redes, algoritmos y gestión de proyectos,
-        formando profesionales capaces de crear software, administrar infraestructura tecnológica y optimizar procesos mediante la automatización.</p>
-      </article>
-      
-    </section>
-
-    <section id="experiencia">
-      <h2>Experiencia</h2>
-      <article>
-        <header>
-          <strong>Quality Assurance (QA)</strong> — Proyecto de Curso en Ingenieria de Software I 
-          <p><em>1/04/2026 – 3/06/2026</em></p>
-        </header>
-        <p> Durante el semestre con mi curso teniamos que desarrollar una mejora para la pagina web de IGSCLAC
-            cada uno cumpliendo un rol en especifico, mi responsabilidad era testear cada avance para detectar 
-            bugs o errores y así que los pudieran mejorar. Durante todos los sprints logramos los objetivos 
-            propuestos y se logro el objetivo principal que era entregar la mejora.</p>
-      </article>
-    </section>
-
+ 
+    <div class="card-grid">
+ 
+      <section id="formacion" class="card">
+        <h2>Formación académica</h2>
+        <article class="timeline-item">
+          <header>
+            <strong>Ingeniería en Sistemas</strong>
+            <p class="meta">Unidad Central del Valle — 7.º semestre / 2026</p>
+          </header>
+          <p>
+            La Ingeniería en Sistemas es una carrera enfocada en el diseño, desarrollo e
+            implementación de soluciones tecnológicas para resolver problemas del mundo real.
+            Combina fundamentos de programación, bases de datos, redes, algoritmos y gestión de
+            proyectos, formando profesionales capaces de crear software, administrar
+            infraestructura tecnológica y optimizar procesos mediante la automatización.
+          </p>
+        </article>
+      </section>
+ 
+      <section id="experiencia" class="card">
+        <h2>Experiencia</h2>
+        <article class="timeline-item">
+          <header>
+            <strong>Quality Assurance (QA)</strong>
+            <p class="meta">Proyecto de curso — Ingeniería de Software I · 01/04/2026 – 03/06/2026</p>
+          </header>
+          <p>
+            Durante el semestre, junto con mi curso, desarrollamos una mejora para la página web
+            de IGSCLAC, cada integrante cumpliendo un rol específico. Mi responsabilidad era
+            testear cada avance para detectar bugs o errores y así facilitar su corrección.
+            Completamos todos los sprints propuestos y entregamos la mejora con éxito.
+          </p>
+        </article>
+      </section>
+ 
